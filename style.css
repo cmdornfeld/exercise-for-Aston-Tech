@@ -15,6 +15,7 @@ a:hover {
 body {
     background-color: black;
     font-family: 'Verdana';
+    filter: blur(.5px);
 }
 
 h1 {
@@ -29,13 +30,18 @@ h2 {
     margin-top: 2rem;
 }
 
+h3 {
+    font-weight: 550;
+}
+
 h1, h2 {
     font-weight: lighter;
-    letter-spacing: .25rem;
+    letter-spacing: .4rem;
 }
 
 .heading {
     color: rgb(255,141,64);
+    filter: saturate(3);
 }
 
 hr {
@@ -53,47 +59,73 @@ hr {
 #main-section {
     width: 95%;
     background-color: white;
-    margin: 2rem auto;
-    border-radius: 2rem;
+    margin: 1rem auto;
+    border-radius: 2.25rem;
     padding: 1rem;
 }
 
 #nav {
-    width: 40%;
-    height: 40%;
+    width: 45%;
     padding: 1rem;
     background-color: white;
     border-radius: .25rem;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 1.5rem;
+    border: 1.5px solid lightgray;
 }
 
-.product-card {
-    width: 25%;
-    text-align: center;
+p {
     margin: .5rem;
+}
+
+
+.product-card {
+    width: 30%;
+    text-align: center;
+    margin: 1rem;
+    height: 40vw;
+}
+
+.product-card p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: .5rem;
 }
 
 #product-card-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 85%;
+}
+
+.product-description {
+    text-align: left;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
 }
 
 .product-info-container {
     background-color: rgb(255,141,64);
     color: white;
-    border-radius: .5rem;
+    border-radius: 1rem;
     padding: 1rem;
+    filter: contrast(1.2);
+    filter: saturate(1.5);
+    height: 80%;
 }
 
-.product-info-detail {
-    display: inline-block;
-    width: 45%;
+.product-feature-one {
+    display: flex;
+    width: 85%;
+    text-align: left;
+    margin: 0 auto;
 }
 
-.product-info-feature {
-    display: inline-block;
-    width: 45%
+.product-feature-two {
+    display: flex;
+    width: 85%;
+    text-align: left;
+    margin: 0 auto;
 }
